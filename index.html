@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniella’s Personal Website</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Nunito", sans-serif;
+            background: #fce7f3;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        .blob {
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            background: #ff9acb;
+            filter: blur(140px);
+            z-index: -1;
+            border-radius: 50%;
+            animation: float 10s infinite ease-in-out;
+        }
+
+        .blob2 {
+            background: #c7a4ff;
+            right: -100px;
+            top: 300px;
+            animation-duration: 12s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-50px); }
+        }
+
+        header {
+            padding: 40px 20px;
+            font-family: "Playfair Display", serif;
+            font-size: 40px;
+            color: #5e2a5d;
+            font-weight: 600;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto 60px;
+            text-align: center;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.35);
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            backdrop-filter: blur(12px);
+            margin-bottom: 35px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px;
+            object-fit: cover;
+            border: 5px solid #ff77b7;
+            box-shadow: 0 6px 20px rgba(255, 105, 180, 0.4);
+        }
+
+        h2 {
+            color: #d63384;
+            font-size: 26px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        p {
+            color: #4b2c4a;
+            font-size: 17px;
+            line-height: 1.6;
+            text-align: justify; 
+        }
+
+        ul {
+            text-align: left;
+            margin: 0 auto;
+            width: fit-content;
+            color: #4b2c4a;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        ul li {
+            margin: 8px 0;
+        }
+
+        .accordion-btn {
+            width: 90%;
+            max-width: 900px;
+            margin: 10px auto;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: 700;
+            background: rgba(255, 255, 255, 0.4);
+            color: #b83280;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            backdrop-filter: blur(6px);
+            transition: 0.3s;
+        }
+
+        .accordion-btn:hover {
+            background: #ffb3d9;
+        }
+
+        .accordion-panel {
+            max-height: 0;
+            overflow: hidden;
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto 20px;
+            background: rgba(255, 255, 255, 0.35);
+            border-radius: 20px;
+            padding: 0 20px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            transition: max-height 0.4s ease-in-out;
+            text-align: center;
+        }
+
+        footer {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(8px);
+            color: #5e2a5d;
+            font-size: 14px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        a {
+            color: #b83280;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="blob"></div>
+<div class="blob blob2"></div>
+
+<header>Welcome to Daniella’s Personal Website</header>
+
+<div class="container">
+
+    <div class="glass-card">
+        <h2>Hello, I am Daniella!</h2>
+        <img src="danyela.jpeg" class="profile-img" alt="My Picture">
+    </div>
+
+    <button class="accordion-btn">About Me</button>
+    <div class="accordion-panel">
+        <h2>About Me</h2>
+        <p>
+            Hello, I am Daniella Gonzales Pabalate, but you can call me Ella or Dana. I’m 18 years old born on May 18, 2025 and 
+            currently studying Bachelor of Science in Information Technology at Batangas State University, 
+            Balayan Campus. I enjoy working with others, learning new things, and gaining different experiences. 
+            I try to stay positive, responsible, and open to new opportunities.
+        </p>
+        <p>
+            I always do my best in my tasks, and I want to improve my skills, especially in the field of 
+            technology. I look forward to meeting new people, growing as a student, and learning more as I continue 
+            my journey.
+        </p>
+    </div>
+
+    <button class="accordion-btn">Hobbies</button>
+    <div class="accordion-panel">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Playing Table Tennis</li>
+            <li>Playing Online Games</li>
+            <li>Painting</li>
+            <li>Watching K-dramas</li>
+        </ul>
+    </div>
+
+    <button class="accordion-btn">Education</button>
+    <div class="accordion-panel">
+        <h2>Educational Background</h2>
+        <ul>
+            <li>Studied Pre-School in St. Luke Integrated School</li>
+            <li>Graduated Elementary in Lian Central School</li>
+            <li>Graduated Junior High School in Lian National High School</li>
+            <li>Graduated Senior High School in Lian Senior High School</li>
+        </ul>
+    </div>
+
+    <button class="accordion-btn">Contact</button>
+    <div class="accordion-panel">
+        <h2>Contact</h2>
+        <ul>
+            <li>Email: <a href="mailto:pabalate8daniella@gmail.com">pabalate8daniella@gmail.com</a></li>
+            <li>Phone: 0997-885-9632</li>
+            <li>Facebook: <a href="#">Daniella Pabalate</a></li>
+            <li>Instagram: <a href="#">@danabadoobee_</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>&copy; 2025 Daniella Gonzales Pabalate</footer>
+
+<script>
+    const buttons = document.querySelectorAll(".accordion-btn");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            const panel = button.nextElementSibling;
+
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
